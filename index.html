@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects | Joe Shaw</title>
+  <style>
+    :root { --border:#e6e6e6; --text:#111; --muted:#555; }
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial; margin: 40px; color: var(--text); background:#fff; }
+    h1 { margin: 0 0 6px; font-size: 30px; }
+    h2 { margin: 0 0 8px; font-size: 22px; }
+    p { margin: 0 0 12px; color: var(--muted); line-height:1.5; }
+
+    .about { max-width: 720px; margin-bottom: 36px; }
+
+    .row {
+      display: flex;
+      gap: 16px;
+      overflow-x: auto;
+      padding: 6px 2px 14px;
+      scroll-snap-type: x mandatory;
+    }
+
+    .card {
+      flex: 0 0 320px;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 14px;
+      box-shadow: 0 2px 14px rgba(0,0,0,0.05);
+      scroll-snap-align: start;
+      background: white;
+    }
+
+    .thumb {
+      width: 100%;
+      height: 160px;
+      border-radius: 12px;
+      object-fit: cover;
+      background: #f3f3f3;
+      border: 1px solid var(--border);
+    }
+
+    .title { font-weight: 750; margin: 12px 0 6px; font-size: 16px; }
+    .desc { color: var(--muted); font-size: 14px; line-height: 1.35; }
+
+    .btns { display: flex; gap: 10px; margin-top: 12px; }
+    a.btn {
+      display: inline-block;
+      padding: 10px 12px;
+      border-radius: 12px;
+      text-decoration: none;
+      border: 1px solid var(--border);
+      color: var(--text);
+      font-size: 14px;
+      font-weight: 650;
+    }
+    a.btn.primary { border-color: #111; }
+
+    .hint { margin-top: 10px; font-size: 13px; color: var(--muted); }
+
+    img.jasper {
+      margin-top:12px;
+      max-width:260px;
+      border-radius:14px;
+      border:1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+
+  <section class="about">
+    <h2>About Me</h2>
+    <p>
+      I am Joe, a final year Mathematics student at the University of Sheffield with a strong focus on data analysis, statistics, and applied modelling.
+    </p>
+    <p>
+      I have used Python, SQL, and statistical methods in both government and commercial settings, including building data tools to support multi billion pound green hydrogen funding decisions at the Department for Energy Security and Net Zero, and running my own e commerce brand where I manage pricing, forecasting, and operational data end to end.
+    </p>
+    <p>
+      I enjoy working at the intersection of data, decision making, and real world impact, and I am particularly interested in analytics, finance, and sports data. This page is a small collection of projects I have built to explore those interests.
+    </p>
+    <p>
+      Fun fact, I also have a cat called Jasper, he is not very helpful with debugging, but he does provide excellent moral support.
+    </p>
+    <img src="jasper.jpg" alt="Jasper the cat" class="jasper">
+  </section>
+
+  <h1>Projects</h1>
+  <p>Click View to open a rendered notebook, or Download to get the ipynb file.</p>
+
+  <div class="row">
+    <div class="card">
+      <img class="thumb" src="nfl.png" alt="NFL thumbnail">
+      <div class="title">NFL Data Analysis</div>
+      <div class="desc">
+        Exploratory and predictive analysis of NFL games using Python and pandas.
+      </div>
+      <div class="btns">
+        <a class="btn primary"
+           href="https://nbviewer.org/github/jshaw12degu/projects/blob/main/nfl_data_research.ipynb"
+           target="_blank" rel="noopener">
+          View
+        </a>
+        <a class="btn"
+           href="https://raw.githubusercontent.com/jshaw12degu/projects/main/nfl_data_research.ipynb">
+          Download
+        </a>
+      </div>
+      <div class="hint">Notebook, nfl_data_research.ipynb</div>
+    </div>
+  </div>
+
+</body>
+</html>
